@@ -286,7 +286,7 @@ func GetCallStack(skip int, frames int, filter string) string {
 			break
 		}
 		if filter == "" || strings.Contains(file, filter) {
-			fmt.Fprintf(buf, "%s:%d | ", file, line)
+			fmt.Fprintf(buf, "%s:%d |", file, line)
 			count++
 		}
 	}
